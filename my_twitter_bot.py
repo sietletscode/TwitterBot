@@ -2,9 +2,9 @@ import tweepy
 import time
 
 print('this is my twitter bot')
-
-auth = tweepy.OAuthHandler('7ueNHhXrcNVPVU6dFfHR1ihDP','vNhCCTHE6IsT6DNtPOol0mIbnvSC4huA1y57trwXPmxMRdlybz')
-auth.set_access_token('839480539098796033-ybDruAv4ATW6VhYeOC3mQByCGQcdEUk','xhMwJsCJOBoCXcpbsk9lIcx18WW5fGTVUmpAtw2a7rfDV')
+#Sign up as developer in twitter and create application , place your keys in key1,key2 Auth1,Auth2
+auth = tweepy.OAuthHandler('key1','key2')
+auth.set_access_token('Auth1','Auth2')
 api = tweepy.API(auth)
 
 FILE_NAME = 'last_seen_id.txt'
